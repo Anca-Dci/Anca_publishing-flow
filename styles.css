@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    
+    background-color: rgb(64, 65, 66);
+    color: rgb(185, 245, 242);
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 1rem 0;
+    text-align: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+  /*   max-width: calc(100% -2rem); */
+}
+header h1{
+    font-size: 3em;
+    margin-bottom: 10px; 
+    padding: 10px;}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    font-size: 40px;
+    
+}
+.animated-header{
+    animation:header-anim 2s ease-in-out infinite;
+
+}
+@keyframes header-anim{
+    0%{transform: translateY(-20px);
+    opacity: 0;}
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+100%{
+    transform: translateY(-20px);
+    opacity: 20px;
+}}
+.symbol-container a{
+    display: block;
+    width: 10em;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#333;
+    transition: background-color 0,3s ease;
+}
+.symbol-container a:hover{
+    background-color: aquamarine;
+}
+.symbol-container i{
+    font-size: 2em;
+    margin-bottom: 5px;
+
+}
+footer{
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+@media(max-width:768px)
+{
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+    
